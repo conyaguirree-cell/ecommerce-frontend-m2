@@ -13,10 +13,148 @@
 
     <!-- para ponerle el nombre a la pestaña que aparece en el navegador -->
     <title>SinBarreras Tech</title>
+
+
+    <!-- link de bootstrap para css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <!-- cdn de jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
+    <!-- va el navbar-->
+    <header>
+        <!-- color del navbar-->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">SinBarreras Tech</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Carrito</a>
+                            </li>
+
+                            <!-- se cero otra linea para hacer un id y linkiarlo con js-->
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" id="numeroproducto">0</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- va el contenido de la pagina web-->
+    <main>
+
+        <!-- codigo sacado de bootstrap, hace que se vean las imagenes -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+
+                    <!-- se adjuntan las imagenes que tengo en mi carpeta img , se le da atributo de altura y ancho para la img-->
+
+                    <img src="assets/img/Timekettle M3.jpg" class="card-img-top" alt="..." width="50px" heigth="100px">
+
+                    <div class="card-body">
+
+                        <!-- nombre producto-->
+                        <h5 class="card-title">Timekettle M3</h5>
+
+                        <!-- descripcion del producto-->
+                        <p class="card-text"> Audífonos híbridos que combinan música de alta calidad con traducción
+                            instantánea. Su diseño ergonómico y su app dedicada permiten una experiencia fluida.
+                        </p>
+
+                    </div>
+
+                    <!-- se agrega boton agregar -->
+                    <div class="card-footer">
+                        <p>$47.990 CLP</p><button type="button" class="btn btn-dark">Agregar</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/WT2 Edge Translator.jpg" class="card-img-top" alt="..." width="50px"
+                        heigth="100px">
+                    <div class="card-body">
+                        <h5 class="card-title">WT2 Edge Translator</h5>
+                        <p class="card-text"> Audífonos diseñados para conversaciones cara a cara. Cada persona usa un
+                            auricular y el sistema traduce automáticamente lo que dice el otro.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p>$44.990 CLP </p><button type="button" class="btn btn-dark">Agregar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/Google Pixel Buds Pro 2.jpg" class="card-img-top" alt="..." width="50px"
+                        heigth="100px">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Pixel Buds Pro 2</h5>
+                        <p class="card-text"> Audífonos premium con integración total a Google Translate. Traducción
+                            automática de voz y texto en más de 40 idiomas, con sonido envolvente y micrófonos de alta
+                            precisión.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <p>$59.990 CLP</p><button type="button" class="btn btn-dark">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- es el pie de pagina, van los terminos y condiciones, contactos, redes sociales -->
+    <footer>
+        <br>
+        <br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    Ubicación: Las Condes, Santiago, Chile
+                </div>
+                <div class="col">
+                    Mail: SinBarreras.tech@gmail.com
+                </div>
+                <div class="col">
+                    instagram: Sinbarrerastech
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- libreria js-->
+    <script src="assets/js/libreria.js"></script>
+
+
+    <!-- link de bootstrap para javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
