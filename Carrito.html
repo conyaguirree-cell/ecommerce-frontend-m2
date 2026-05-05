@@ -34,26 +34,24 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">SinBarreras Tech</a>
-
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="producto.html">Producto </a>
+                                <a class="nav-link active" aria-current="page" href="producto.html">Producto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contacto.html">contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="carrito.html">Carrito</a>
+                                <a class="nav-link" href="Carrito.html">Carrito</a>
                             </li>
 
-                            <!-- se creo otra linea para hacer un id y linkiarlo con js-->
+                            <!-- se cero otra linea para hacer un id y linkiarlo con js-->
                             <li class="nav-item">
                                 <a class="nav-link text-danger" id="numeroproducto">0</a>
                             </li>
@@ -66,80 +64,11 @@
 
     <!-- va el contenido de la pagina web-->
     <main>
+        <h1> Carrito </h1>
 
-        <!-- codigo sacado de bootstrap, hace que se vean las imagenes -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-
-                    <!-- se adjuntan las imagenes que tengo en mi carpeta img , se le da atributo de altura y ancho para la img-->
-                    <!-- se agrega un href para que al hacer click sobre la imagen me lleve al detalle de esta-->
-                    <a href="detalle.html">
-                        <img src="assets/img/Timekettle M3.jpg" class="card-img-top" alt="..." width="50px"
-                            heigth="100px">
-                    </a>
-                    <div class="card-body">
-
-                        <!-- nombre producto-->
-                        <h5 class="card-title">Timekettle M3</h5>
-
-                        <!-- descripcion del producto-->
-                        <p class="card-text"> Audífonos híbridos que combinan música de alta calidad con traducción
-                            instantánea. Su diseño ergonómico y su app dedicada permiten una experiencia fluida.
-                        </p>
-
-                    </div>
-
-                    <!-- se agrega boton agregar -->
-                    <div class="card-footer">
-                        <p>$47.990 CLP</p><button type="button" class="btn btn-dark"
-                            onclick="javascript:addproducto();">Agregar</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <a href="detalle.html">
-                        <img src="assets/img/WT2 Edge Translator.jpg" class="card-img-top" alt="..." width="50px"
-                            heigth="100px">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">WT2 Edge Translator</h5>
-                        <p class="card-text"> Audífonos diseñados para conversaciones cara a cara. Cada persona usa un
-                            auricular y el sistema traduce automáticamente lo que dice el otro.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <p>$44.990 CLP </p><button type="button" class="btn btn-dark"
-                            onclick="javascript:addproducto();">Agregar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <a href="detalle.html">
-                        <img src="assets/img/Google Pixel Buds Pro 2.jpg" class="card-img-top" alt="..." width="50px"
-                            heigth="100px">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Google Pixel Buds Pro 2</h5>
-                        <p class="card-text"> Audífonos premium con integración total a Google Translate. Traducción
-                            automática de voz y texto en más de 40 idiomas, con sonido envolvente y micrófonos de alta
-                            precisión.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <p>$59.990 CLP</p><button type="button" class="btn btn-dark"
-                            onclick="javascript:addproducto();">Agregar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     <!-- es el pie de pagina, van los terminos y condiciones, contactos, redes sociales -->
-
     <footer class="bg-dark text-light mt-5 py-4">
         <div class="container">
             <div class="row text-center text-md-start">
@@ -175,7 +104,6 @@
         </div>
 
     </footer>
-
 
     <!-- libreria js-->
     <script src="assets/js/libreria.js"></script>
